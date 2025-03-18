@@ -1,0 +1,38 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  11
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      physicalProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+viscosityModel  constant;
+
+// V = 3.2 m/s (average)
+// Vmax = 6.4 m/s (maximum at centerline)
+// D=0.1 m  diameter or side of square or hydraulic diameter
+// rho = 2 kg/m3  mu = 0.001 Pa s  nu = mu/rho = 5e-4 m2/s
+// Re = 640
+// for laminar flow entrance lenght is L_ent = 0.05 D Re = 3.2 m
+// then we have to chose long enough length
+// L = 10 m = 100 D = 3 L_ent
+// Delta H = f L/D V^2 / 2 g
+// Delta P = rho g Delta H
+// Delta P = f L/D rho V^2 / 2
+// Delta P/rho = f L/D V^2 / 2
+// f = 64/Re = 0.1  circle
+// f = 56.92/Re = 0.08894  square
+// Delta P/rho = 51.2 m2/s2 (kinematic pressure) circle
+// Delta P/rho = 45.5 m2/s2 (kinematic pressure) square
+
+nu              [0 2 -1 0 0 0 0] 5.0e-4;
+
+// ************************************************************************* //

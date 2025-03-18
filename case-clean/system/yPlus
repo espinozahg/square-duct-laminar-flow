@@ -1,0 +1,36 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  11
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+
+// foamPostProcess -help
+// foamPostProcess -list
+//    Available configured functionObjects:
+//    cellMin
+//    cellMax
+//    faceZoneAverage
+//    fieldAverage
+//    patchAverage
+//    volAverage
+// -field <name>     Specify the name of the field to be processed, e.g. U
+// -time <ranges>    comma-separated time ranges - eg, ':10,20,40:70,1000:'
+// -func <name>   Specify the name of the functionObject to execute, e.g. Q
+// -region <name>    specify alternative mesh region
+// foamPostProcess -solver incompressibleFluid -time 500
+
+yPlus
+{
+   type            yPlus;
+   libs            ("libfieldFunctionObjects.so");
+   writeControl    writeTime;
+   //writeControl    timeStep;
+   //timeInterval  1; // writes field at each time step, we do not want that
+   //writeInterval   1;
+   //log           yes; // default yes
+   //writeFields     yes; // Store and write volume field representations of forces and moments
+   patches         (wall);
+   //patches         (hull floor); // space separated exists in tutorials without ""
+}
