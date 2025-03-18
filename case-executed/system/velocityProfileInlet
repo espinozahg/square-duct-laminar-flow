@@ -1,0 +1,61 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  11
+     \\/     M anipulation  |
+-------------------------------------------------------------------------------
+Description
+    Writes graph data for specified fields along a line, specified by start
+    and end points.
+
+\*---------------------------------------------------------------------------*/
+
+// https://cpp.openfoam.org/v11/classFoam_1_1sampledSets_1_1lineUniform.html
+// https://cpp.openfoam.org/v11/classFoam_1_1sampledSets_1_1lineCell.html
+// https://cpp.openfoam.org/v11/classFoam_1_1sampledSets_1_1lineFace.html
+// https://cpp.openfoam.org/v11/classFoam_1_1sampledSets_1_1lineCellFace.html
+
+#include "$FOAM_CASE/system/globalDefs"
+
+start   (0.0   $myDhp  0.0);
+end     ($myD  $myDhp  0.0);
+fields  (U);
+
+// Sampling and I/O settings
+// #includeEtc "caseDicts/postProcessing/graphs/sampleDict.cfg"
+
+
+
+setConfig
+{
+    type    lineFace;   // uniform, midPoint, face, midPointAndFace
+    axis    x;  // x, y, z, xyz, distance
+    //nPoints 11;
+    //nPoints $myNxp1; // face does not requires nPoints, uniform requires nPoints
+}
+
+// Must be last entry
+// #includeEtc "caseDicts/postProcessing/graphs/graph.cfg"
+
+type            sets; // 
+libs            ("libsampling.so");
+
+writeControl    writeTime;
+//writeControl    timeStep;
+
+interpolationScheme cellPoint; // cell, cellPoint, cellPointFace
+
+setFormat   raw; // raw, gnuplot, xmgr, jplot
+
+sets
+(
+    line
+    {
+        $setConfig;
+        start $start;
+        end   $end;
+    }
+);
+
+// ************************************************************************* //

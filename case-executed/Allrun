@@ -1,0 +1,55 @@
+#!/bin/bash
+cd ${0%/*} || exit 1                        # Run from this directory
+
+
+set -a
+. $WM_PROJECT_DIR/bin/tools/RunFunctions    # Tutorial run functions
+set +a
+
+#export -f runApplication
+
+# before start
+# module load mpi/openmpi-x86_64 ; source $HOME/OpenFOAM/OpenFOAM-v1812/etc/bashrc
+# source /opt/openfoam11/etc/bashrc
+
+
+# chmod ug+rwx Allrun Allclean
+
+
+# time works here
+#/usr/bin/time sleep 2
+
+# Make dummy 0 directory
+#mkdir 0
+
+runApplication blockMesh
+#/usr/bin/time runApplication blockMesh
+#/usr/bin/time sh -c "runApplication blockMesh"
+
+runApplication renumberMesh -overwrite
+
+
+#foamRun -solver incompressibleFluid
+#runApplication $(getApplication)
+#/usr/bin/time runApplication $(getApplication)
+#/usr/bin/time sh -c "runApplication $(getApplication)"
+/usr/bin/time bash -c "runApplication $(getApplication)"
+
+#\cp system/decomposeParDict.hierarchical system/decomposeParDict
+#runApplication decomposePar
+
+#\cp system/decomposeParDict.ptscotch system/decomposeParDict
+#runParallel snappyHexMesh -overwrite
+
+#find . -iname '*level*' -type f -delete
+
+# - Set the initial fields
+#restore0Dir -processor
+
+#runParallel topoSet
+#runParallel $(getApplication)
+
+#runApplication reconstructParMesh -constant
+#runApplication reconstructPar
+
+#------------------------------------------------------------------------------

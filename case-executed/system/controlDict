@@ -1,0 +1,90 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  11
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// grep -ri "include"  /home/username/openfoam-tutorials-v11
+// grep -ri "patchAverage"  /opt/openfoam11
+
+//#include "globalDefs"
+
+application     foamRun;
+
+solver          incompressibleFluid;
+
+startFrom       startTime;
+
+startTime       0;
+
+stopAt          endTime;
+
+endTime         500;
+
+deltaT          1;
+
+writeControl    timeStep;
+
+writeInterval   50;
+
+purgeWrite      0;
+
+writeFormat     ascii;
+
+writePrecision  6;
+
+writeCompression off;
+
+timeFormat      general;
+
+timePrecision   6;
+
+graphFormat     gnuplot; // raw, gnuplot, xmgr, jplot
+
+runTimeModifiable true;
+
+//#include "sampleControls"
+
+
+// https://cpp.openfoam.org/v11/functionObjectList_8C_source.html
+
+functions
+{
+//    #include "streamLines"
+//    #include "wallBoundedStreamLines"
+//    #include "cuttingPlane"
+//    #include "forceCoeffs"
+//    #include "forces"
+//    #include "turbulenceFields" // not needed because it writes it automatically, but in paraFoam you have to select them before pressing apply
+// grep -ri "yplus" /home/username/ws/openfoam-tutorials-v11
+    #include "yPlus"
+//    #include "ensightWrite"
+    //#includeFunc "stressComponents"
+    #includeFunc "velocityProfile"
+    #includeFunc "velocityProfileXY"
+    #includeFunc "velocityProfileInlet"
+    #includeFunc "pressureDrop"
+//    #includeFunc "flowRatePatch"
+   #includeFunc patchFlowRate(name=flowRate, patch=outlet, writeControl=writeTime)
+   #includeFunc "yPlusz8"
+   //#includeFunc patchAverage(patch=wall, fields=(yPlus)) // works writing at each time step
+   //#includeFunc patchAverage(patch=wall, fields=(yPlus), writeControl=writeTime) // works, has long name
+   #includeFunc patchAverage(name=yPlusAvgWall, patch=wall, fields=(yPlus), writeControl=writeTime) // works, has good name
+    //#include "gradP"
+    //#include "gradU"
+    //#include "peclet"
+    //#include "courant"
+    //#include "solverInfo"
+}
+
+// ************************************************************************* //

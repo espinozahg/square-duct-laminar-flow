@@ -1,0 +1,213 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 12-dcff2b94e86e
+Exec   : blockMesh
+Date   : Mar 18 2025
+Time   : 13:42:14
+Host   : "RAIOU5CGBWM3"
+PID    : 1088
+I/O    : uncollated
+Case   : /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Expanding #calc at line 33 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfile/velocityProfile"
+Creating new library in "dynamicCode/_f6f7595dd1193d017cb647bfd7b8163a27a79528/platforms/linux64GccDPInt32Opt/lib/libcodeStream_f6f7595dd1193d017cb647bfd7b8163a27a79528.so"
+"/opt/openfoam12/etc/codeTemplates/dynamicCode/codeStreamTemplate.C" "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_f6f7595dd1193d017cb647bfd7b8163a27a79528/codeStreamTemplate.C"
+Invoking "wmake -s libso /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_f6f7595dd1193d017cb647bfd7b8163a27a79528"
+wmake libso /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_f6f7595dd1193d017cb647bfd7b8163a27a79528
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_f6f7595dd1193d017cb647bfd7b8163a27a79528/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_f6f7595dd1193d017cb647bfd7b8163a27a79528.so
+Expanding #calc at line 35 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfile/velocityProfile"
+Creating new library in "dynamicCode/_fdb6d3043e592c8f40dc99d7b287fb5e5eb8369d/platforms/linux64GccDPInt32Opt/lib/libcodeStream_fdb6d3043e592c8f40dc99d7b287fb5e5eb8369d.so"
+"/opt/openfoam12/etc/codeTemplates/dynamicCode/codeStreamTemplate.C" "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_fdb6d3043e592c8f40dc99d7b287fb5e5eb8369d/codeStreamTemplate.C"
+Invoking "wmake -s libso /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_fdb6d3043e592c8f40dc99d7b287fb5e5eb8369d"
+wmake libso /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_fdb6d3043e592c8f40dc99d7b287fb5e5eb8369d
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_fdb6d3043e592c8f40dc99d7b287fb5e5eb8369d/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_fdb6d3043e592c8f40dc99d7b287fb5e5eb8369d.so
+Expanding #calc at line 36 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfile/velocityProfile"
+Creating new library in "dynamicCode/_24f6ed920264f98c949fb139598c1500dfb5817b/platforms/linux64GccDPInt32Opt/lib/libcodeStream_24f6ed920264f98c949fb139598c1500dfb5817b.so"
+"/opt/openfoam12/etc/codeTemplates/dynamicCode/codeStreamTemplate.C" "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_24f6ed920264f98c949fb139598c1500dfb5817b/codeStreamTemplate.C"
+Invoking "wmake -s libso /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_24f6ed920264f98c949fb139598c1500dfb5817b"
+wmake libso /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_24f6ed920264f98c949fb139598c1500dfb5817b
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_24f6ed920264f98c949fb139598c1500dfb5817b/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_24f6ed920264f98c949fb139598c1500dfb5817b.so
+Expanding #calc at line 37 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfile/velocityProfile"
+Creating new library in "dynamicCode/_3f926f28c2480d86e0c41a0d9aea23ddf861fd9c/platforms/linux64GccDPInt32Opt/lib/libcodeStream_3f926f28c2480d86e0c41a0d9aea23ddf861fd9c.so"
+"/opt/openfoam12/etc/codeTemplates/dynamicCode/codeStreamTemplate.C" "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_3f926f28c2480d86e0c41a0d9aea23ddf861fd9c/codeStreamTemplate.C"
+Invoking "wmake -s libso /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_3f926f28c2480d86e0c41a0d9aea23ddf861fd9c"
+wmake libso /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_3f926f28c2480d86e0c41a0d9aea23ddf861fd9c
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_3f926f28c2480d86e0c41a0d9aea23ddf861fd9c/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_3f926f28c2480d86e0c41a0d9aea23ddf861fd9c.so
+Expanding #calc at line 38 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfile/velocityProfile"
+Creating new library in "dynamicCode/_eaec444a44f476c499b84ee2de0efc9262b271db/platforms/linux64GccDPInt32Opt/lib/libcodeStream_eaec444a44f476c499b84ee2de0efc9262b271db.so"
+"/opt/openfoam12/etc/codeTemplates/dynamicCode/codeStreamTemplate.C" "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_eaec444a44f476c499b84ee2de0efc9262b271db/codeStreamTemplate.C"
+Invoking "wmake -s libso /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_eaec444a44f476c499b84ee2de0efc9262b271db"
+wmake libso /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_eaec444a44f476c499b84ee2de0efc9262b271db
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_eaec444a44f476c499b84ee2de0efc9262b271db/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_eaec444a44f476c499b84ee2de0efc9262b271db.so
+Expanding #calc at line 40 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfile/velocityProfile"
+Creating new library in "dynamicCode/_c6869cc525802317b89a7dd2d5dbc5c18ebf97c2/platforms/linux64GccDPInt32Opt/lib/libcodeStream_c6869cc525802317b89a7dd2d5dbc5c18ebf97c2.so"
+"/opt/openfoam12/etc/codeTemplates/dynamicCode/codeStreamTemplate.C" "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_c6869cc525802317b89a7dd2d5dbc5c18ebf97c2/codeStreamTemplate.C"
+Invoking "wmake -s libso /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_c6869cc525802317b89a7dd2d5dbc5c18ebf97c2"
+wmake libso /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_c6869cc525802317b89a7dd2d5dbc5c18ebf97c2
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_c6869cc525802317b89a7dd2d5dbc5c18ebf97c2/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_c6869cc525802317b89a7dd2d5dbc5c18ebf97c2.so
+Expanding #calc at line 42 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfile/velocityProfile"
+Creating new library in "dynamicCode/_ebf4edf781e3c79c4496fde159ca8afae44acb83/platforms/linux64GccDPInt32Opt/lib/libcodeStream_ebf4edf781e3c79c4496fde159ca8afae44acb83.so"
+"/opt/openfoam12/etc/codeTemplates/dynamicCode/codeStreamTemplate.C" "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_ebf4edf781e3c79c4496fde159ca8afae44acb83/codeStreamTemplate.C"
+Invoking "wmake -s libso /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_ebf4edf781e3c79c4496fde159ca8afae44acb83"
+wmake libso /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_ebf4edf781e3c79c4496fde159ca8afae44acb83
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_ebf4edf781e3c79c4496fde159ca8afae44acb83/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_ebf4edf781e3c79c4496fde159ca8afae44acb83.so
+Expanding #calc at line 44 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfile/velocityProfile"
+Creating new library in "dynamicCode/_784ac2630aa23dd8feae3dfe33b64360c8bb74b1/platforms/linux64GccDPInt32Opt/lib/libcodeStream_784ac2630aa23dd8feae3dfe33b64360c8bb74b1.so"
+"/opt/openfoam12/etc/codeTemplates/dynamicCode/codeStreamTemplate.C" "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_784ac2630aa23dd8feae3dfe33b64360c8bb74b1/codeStreamTemplate.C"
+Invoking "wmake -s libso /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_784ac2630aa23dd8feae3dfe33b64360c8bb74b1"
+wmake libso /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_784ac2630aa23dd8feae3dfe33b64360c8bb74b1
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_784ac2630aa23dd8feae3dfe33b64360c8bb74b1/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_784ac2630aa23dd8feae3dfe33b64360c8bb74b1.so
+Expanding #calc at line 46 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfile/velocityProfile"
+Creating new library in "dynamicCode/_da05e6e8a5cd51d6b4d729df6e568f9bf71e8c43/platforms/linux64GccDPInt32Opt/lib/libcodeStream_da05e6e8a5cd51d6b4d729df6e568f9bf71e8c43.so"
+"/opt/openfoam12/etc/codeTemplates/dynamicCode/codeStreamTemplate.C" "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_da05e6e8a5cd51d6b4d729df6e568f9bf71e8c43/codeStreamTemplate.C"
+Invoking "wmake -s libso /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_da05e6e8a5cd51d6b4d729df6e568f9bf71e8c43"
+wmake libso /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_da05e6e8a5cd51d6b4d729df6e568f9bf71e8c43
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_da05e6e8a5cd51d6b4d729df6e568f9bf71e8c43/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_da05e6e8a5cd51d6b4d729df6e568f9bf71e8c43.so
+Expanding #calc at line 47 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfile/velocityProfile"
+Creating new library in "dynamicCode/_cc5bbcc87fb57e3409e9e82caab136b5ac561d2b/platforms/linux64GccDPInt32Opt/lib/libcodeStream_cc5bbcc87fb57e3409e9e82caab136b5ac561d2b.so"
+"/opt/openfoam12/etc/codeTemplates/dynamicCode/codeStreamTemplate.C" "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_cc5bbcc87fb57e3409e9e82caab136b5ac561d2b/codeStreamTemplate.C"
+Invoking "wmake -s libso /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_cc5bbcc87fb57e3409e9e82caab136b5ac561d2b"
+wmake libso /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_cc5bbcc87fb57e3409e9e82caab136b5ac561d2b
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/dynamicCode/_cc5bbcc87fb57e3409e9e82caab136b5ac561d2b/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_cc5bbcc87fb57e3409e9e82caab136b5ac561d2b.so
+Expanding #calc at line 33 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileXY/velocityProfileXY"
+Expanding #calc at line 35 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileXY/velocityProfileXY"
+Expanding #calc at line 36 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileXY/velocityProfileXY"
+Expanding #calc at line 37 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileXY/velocityProfileXY"
+Expanding #calc at line 38 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileXY/velocityProfileXY"
+Expanding #calc at line 40 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileXY/velocityProfileXY"
+Expanding #calc at line 42 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileXY/velocityProfileXY"
+Expanding #calc at line 44 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileXY/velocityProfileXY"
+Expanding #calc at line 46 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileXY/velocityProfileXY"
+Expanding #calc at line 47 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileXY/velocityProfileXY"
+Expanding #calc at line 33 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileInlet/velocityProfileInlet"
+Expanding #calc at line 35 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileInlet/velocityProfileInlet"
+Expanding #calc at line 36 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileInlet/velocityProfileInlet"
+Expanding #calc at line 37 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileInlet/velocityProfileInlet"
+Expanding #calc at line 38 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileInlet/velocityProfileInlet"
+Expanding #calc at line 40 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileInlet/velocityProfileInlet"
+Expanding #calc at line 42 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileInlet/velocityProfileInlet"
+Expanding #calc at line 44 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileInlet/velocityProfileInlet"
+Expanding #calc at line 46 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileInlet/velocityProfileInlet"
+Expanding #calc at line 47 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileInlet/velocityProfileInlet"
+Expanding #calc at line 33 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/pressureDrop/pressureDrop"
+Expanding #calc at line 35 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/pressureDrop/pressureDrop"
+Expanding #calc at line 36 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/pressureDrop/pressureDrop"
+Expanding #calc at line 37 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/pressureDrop/pressureDrop"
+Expanding #calc at line 38 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/pressureDrop/pressureDrop"
+Expanding #calc at line 40 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/pressureDrop/pressureDrop"
+Expanding #calc at line 42 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/pressureDrop/pressureDrop"
+Expanding #calc at line 44 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/pressureDrop/pressureDrop"
+Expanding #calc at line 46 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/pressureDrop/pressureDrop"
+Expanding #calc at line 47 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/pressureDrop/pressureDrop"
+Expanding #calc at line 33 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/yPlusz8/yPlusz8"
+Expanding #calc at line 35 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/yPlusz8/yPlusz8"
+Expanding #calc at line 36 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/yPlusz8/yPlusz8"
+Expanding #calc at line 37 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/yPlusz8/yPlusz8"
+Expanding #calc at line 38 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/yPlusz8/yPlusz8"
+Expanding #calc at line 40 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/yPlusz8/yPlusz8"
+Expanding #calc at line 42 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/yPlusz8/yPlusz8"
+Expanding #calc at line 44 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/yPlusz8/yPlusz8"
+Expanding #calc at line 46 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/yPlusz8/yPlusz8"
+Expanding #calc at line 47 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/yPlusz8/yPlusz8"
+Reading "blockMeshDict"
+
+Creating block mesh from
+    "system/blockMeshDict"
+Expanding #calc at line 33 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/blockMeshDict"
+Expanding #calc at line 35 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/blockMeshDict"
+Expanding #calc at line 36 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/blockMeshDict"
+Expanding #calc at line 37 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/blockMeshDict"
+Expanding #calc at line 38 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/blockMeshDict"
+Expanding #calc at line 40 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/blockMeshDict"
+Expanding #calc at line 42 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/blockMeshDict"
+Expanding #calc at line 44 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/blockMeshDict"
+Expanding #calc at line 46 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/blockMeshDict"
+Expanding #calc at line 47 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/blockMeshDict"
+No non-linear block edges defined
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 0
+		Number of boundary faces : 6
+		Number of defined boundary faces : 6
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 0.01 .. 0.01
+        j : 0.01 .. 0.01
+        k : 0.1 .. 0.1
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (0 0 0) (0.1 0.1 10)
+  nPoints: 12221
+  nCells: 10000
+  nFaces: 32100
+  nInternalFaces: 27900
+----------------
+Patches
+----------------
+  patch 0 (start: 27900 size: 100) name: inlet
+  patch 1 (start: 28000 size: 100) name: outlet
+  patch 2 (start: 28100 size: 4000) name: wall
+
+End
+

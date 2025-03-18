@@ -1,0 +1,127 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  11
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+
+// based in tutorials/incompressibleFluid/pitzDailySteady/blockMesh
+
+// grep -ri "include"  /home/username/openfoam-tutorials-v11
+
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    object      blockMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// This file is a merge from tutorial and previous OpenFOAM v1812 implementation
+// echo $FOAM_TUTORIALS
+// /opt/openfoam11/tutorials
+// cannot access /
+// so, I copy tutorials to
+// /home/username/ws/openfoam-tutorials-v11
+// ls /home/username/ws/openfoam-tutorials-v11/incompressibleFluid/
+// pitzDailySteady
+// roomResidenceTime
+// planarPoiseuille
+
+#include "$FOAM_CASE/system/globalDefs"
+
+//scale   0.001;
+
+//myvar #calc "sin(2) + cos(3) + round(3.1)" ;
+
+vertices
+(
+    // very simple version: square section
+    // inlet region
+       (0       0        0    )           // pt 0
+       ($myD    0        0    )           // pt 1
+       ($myD    $myD     0    )           // pt 2
+       (0       $myD     0    )           // pt 3
+    // outlet region
+       (0       0        $myL )           // pt 4
+       ($myD    0        $myL )           // pt 5
+       ($myD    $myD     $myL )           // pt 6
+       (0       $myD     $myL )           // pt 7
+       
+    //// inlet region
+    //   ($myDhp  $myDhp   0   )           // pt 0
+    //   ($myDhn  $myDhp   0   )           // pt 1
+    //   ($myDhn  $myDhn   0   )           // pt 2
+    //   ($myDhp  $myDhn   0   )           // pt 3
+    //// outlet region
+    //   ($myDhp  $myDhp   $myL)           // pt 4
+    //   ($myDhn  $myDhp   $myL)           // pt 5
+    //   ($myDhn  $myDhn   $myL)           // pt 6
+    //   ($myDhp  $myDhn   $myL)           // pt 7
+);
+
+blocks
+(
+    // blockMesh -help
+    //                        7 ---- 6
+    //                 f5     |\     |\     f3
+    //                 |      | 4 ---- 5     \
+    //                 |      3 |--- 2 |      \
+    //                 |       \|     \|      f2
+    //                 f4       0 ---- 1
+    //    Y  Z
+    //     \ |                f0 ------ f1
+    //      \|
+    //       O--- X
+    
+    hex (0 1 2 3 4 5 6 7) ( $myNx $myNy $myNz)  simpleGrading (1 1 1)
+    //hex (4 5 15 14  6 7 17 16) outlet (200 20 20)  simpleGrading (1 1 1)
+);
+
+
+/*
+edges
+(
+    //// block 2
+    //arc  1  8   (17.678  17.678  25)
+    //arc 11 18   (17.678  17.678 -25)
+    //arc  3  9   (53.033  53.033  25)
+    //arc 13 19   (53.033  53.033 -25)
+);
+*/
+
+boundary
+(
+    // faces taken as poiting outside according to right hand rule
+    inlet
+    {
+        type patch;
+        faces
+        (
+            (0 3 2 1)
+        );
+    }
+
+    outlet
+    {
+        type patch;
+        faces
+        (
+            (4 5 6 7)
+        );
+    }
+);
+
+mergePatchPairs
+(
+);
+
+defaultPatch
+{
+    name wall;
+    type wall;
+}
+
+
+// ************************************************************************* //

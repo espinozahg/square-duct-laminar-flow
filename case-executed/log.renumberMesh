@@ -1,0 +1,112 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 12-dcff2b94e86e
+Exec   : renumberMesh -overwrite
+Date   : Mar 18 2025
+Time   : 13:42:24
+Host   : "RAIOU5CGBWM3"
+PID    : 2950
+I/O    : uncollated
+Case   : /home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Expanding #calc at line 33 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfile/velocityProfile"
+Expanding #calc at line 35 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfile/velocityProfile"
+Expanding #calc at line 36 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfile/velocityProfile"
+Expanding #calc at line 37 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfile/velocityProfile"
+Expanding #calc at line 38 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfile/velocityProfile"
+Expanding #calc at line 40 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfile/velocityProfile"
+Expanding #calc at line 42 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfile/velocityProfile"
+Expanding #calc at line 44 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfile/velocityProfile"
+Expanding #calc at line 46 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfile/velocityProfile"
+Expanding #calc at line 47 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfile/velocityProfile"
+Expanding #calc at line 33 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileXY/velocityProfileXY"
+Expanding #calc at line 35 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileXY/velocityProfileXY"
+Expanding #calc at line 36 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileXY/velocityProfileXY"
+Expanding #calc at line 37 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileXY/velocityProfileXY"
+Expanding #calc at line 38 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileXY/velocityProfileXY"
+Expanding #calc at line 40 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileXY/velocityProfileXY"
+Expanding #calc at line 42 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileXY/velocityProfileXY"
+Expanding #calc at line 44 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileXY/velocityProfileXY"
+Expanding #calc at line 46 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileXY/velocityProfileXY"
+Expanding #calc at line 47 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileXY/velocityProfileXY"
+Expanding #calc at line 33 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileInlet/velocityProfileInlet"
+Expanding #calc at line 35 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileInlet/velocityProfileInlet"
+Expanding #calc at line 36 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileInlet/velocityProfileInlet"
+Expanding #calc at line 37 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileInlet/velocityProfileInlet"
+Expanding #calc at line 38 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileInlet/velocityProfileInlet"
+Expanding #calc at line 40 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileInlet/velocityProfileInlet"
+Expanding #calc at line 42 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileInlet/velocityProfileInlet"
+Expanding #calc at line 44 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileInlet/velocityProfileInlet"
+Expanding #calc at line 46 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileInlet/velocityProfileInlet"
+Expanding #calc at line 47 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/velocityProfileInlet/velocityProfileInlet"
+Expanding #calc at line 33 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/pressureDrop/pressureDrop"
+Expanding #calc at line 35 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/pressureDrop/pressureDrop"
+Expanding #calc at line 36 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/pressureDrop/pressureDrop"
+Expanding #calc at line 37 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/pressureDrop/pressureDrop"
+Expanding #calc at line 38 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/pressureDrop/pressureDrop"
+Expanding #calc at line 40 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/pressureDrop/pressureDrop"
+Expanding #calc at line 42 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/pressureDrop/pressureDrop"
+Expanding #calc at line 44 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/pressureDrop/pressureDrop"
+Expanding #calc at line 46 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/pressureDrop/pressureDrop"
+Expanding #calc at line 47 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/pressureDrop/pressureDrop"
+Expanding #calc at line 33 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/yPlusz8/yPlusz8"
+Expanding #calc at line 35 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/yPlusz8/yPlusz8"
+Expanding #calc at line 36 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/yPlusz8/yPlusz8"
+Expanding #calc at line 37 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/yPlusz8/yPlusz8"
+Expanding #calc at line 38 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/yPlusz8/yPlusz8"
+Expanding #calc at line 40 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/yPlusz8/yPlusz8"
+Expanding #calc at line 42 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/yPlusz8/yPlusz8"
+Expanding #calc at line 44 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/yPlusz8/yPlusz8"
+Expanding #calc at line 46 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/yPlusz8/yPlusz8"
+Expanding #calc at line 47 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/system/controlDict/functions/yPlusz8/yPlusz8"
+Create mesh for time = 0
+
+Mesh size: 10000
+Before renumbering :
+    band           : 100
+    profile        : 990909
+
+Using default renumberMethod.
+
+Selecting renumberMethod CuthillMcKee
+
+Reading geometric fields
+
+Reading volScalarField p
+--> FOAM Warning : 
+    From function const Foam::HashTable<Foam::List<int>, Foam::word>& Foam::polyBoundaryMesh::groupPatchIndices() const
+    in file meshes/polyMesh/polyBoundaryMesh/polyBoundaryMesh.C at line 506
+    Removing patchGroup 'wall' which clashes with patch 2 of the same name.
+Reading volScalarField yPlus
+Reading volVectorField U
+Expanding #calc at line 33 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/0/U"
+Expanding #calc at line 35 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/0/U"
+Expanding #calc at line 36 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/0/U"
+Expanding #calc at line 37 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/0/U"
+Expanding #calc at line 38 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/0/U"
+Expanding #calc at line 40 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/0/U"
+Expanding #calc at line 42 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/0/U"
+Expanding #calc at line 44 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/0/U"
+Expanding #calc at line 46 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/0/U"
+Expanding #calc at line 47 in file "/home/username/ws/pipe-tube-duct-square-openfoam-simplefoam-v11/0/U"
+
+After renumbering :
+    band           : 100
+    profile        : 956208
+
+Writing mesh to "constant"
+
+End
+
